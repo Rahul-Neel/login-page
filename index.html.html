@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: -webkit-linear-gradient(to right, #155799, #159957);
+            background: linear-gradient(to right, #155799, #159957);
+            color: whitesmoke;
+        }
+
+
+
+        h2 {
+            text-align: center;
+        }
+
+
+        form {
+            width: 20rem;
+            margin: 2rem auto;
+            color: whitesmoke;
+
+
+            background-color: rgba(11, 15, 13, 0.582);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            padding: 25px 25px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+            padding: 15px 18px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #030804;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 5px;
+            margin: 7px 0;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        button:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+
+        .form_headings {
+            text-align: center;
+        }
+
+        .form_headings p {
+            color: gray;
+        }
+
+        .main_Container {
+            padding: 16px;
+        }
+        .register {
+            color: white;
+            text-align: center;
+        }
+
+        .register a {
+            color: rgb(74, 146, 235);
+        }
+
+        .register a:link {
+            text-decoration: none;
+        }
+
+
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <h2>Login form using HTML and CSS</h1>
+        <form action="">
+            <div class="form_headings">
+                <h3>Sign in</h3>
+                <p>Sign with your username and password</p>
+            </div>
+            <div class="main_container">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <div class="sub_container">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                    <a href="#" style="margin-left: 3rem;color: aquamarine;" class="forgot">Forgot Password?</a>
+                </div>
+                <button type="submit">Login</button>
+                <p class="register">Not a member?<a href="#">Register here!</a></p>
+            </div>
+        </form>
+
+</body>
+
+</html>
